@@ -1,0 +1,3 @@
+displayName = Red Team Mod
+author = Jacob
+version = 1.0
