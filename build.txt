@@ -1,3 +1,4 @@
 displayName = Red Team Mod
 author = Jacob
-version = 1.0
+version = 1.0.1
+homepage = https://github.com/Jadams505/RedTeamMod
