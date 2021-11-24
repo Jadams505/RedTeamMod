@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace RedTeamMod
+namespace RedTeam
 {
     public class RedTeamPlayer : ModPlayer
     {
