@@ -1,7 +1,7 @@
 using Terraria.ModLoader;
 using log4net;
 
-namespace RedTeam
+namespace RedTeamMod
 {
 	public class RedTeamMod : Mod
 	{

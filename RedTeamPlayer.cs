@@ -1,7 +1,8 @@
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace RedTeam
+namespace RedTeamMod
 {
     public class RedTeamPlayer : ModPlayer
     {
@@ -12,15 +13,15 @@ namespace RedTeam
 
         public override void SendClientChanges(ModPlayer clientPlayer)
 		{
-            if(player.team == 1 && clientPlayer.player.team != 1)
+            if(Player.team == 1 && clientPlayer.Player.team != 1)
             {
-                NetMessage.SendData(45, -1, -1, null, Main.myPlayer);
+                NetMessage.SendData(MessageID.PlayerTeam, -1, -1, null, Main.myPlayer);
             }
 		}
 
         public override void clientClone(ModPlayer clientClone)
         {
-            clientClone.player.team = player.team;
+            clientClone.Player.team = Player.team;
         }
 
 
