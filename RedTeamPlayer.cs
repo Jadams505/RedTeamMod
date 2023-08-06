@@ -7,8 +7,8 @@ namespace RedTeamMod
     public class RedTeamPlayer : ModPlayer
     {
         
-        public override void OnEnterWorld(Player player) {
-            player.team = 1;
+        public override void OnEnterWorld() {
+            Player.team = 1;
 		}
 
         public override void SendClientChanges(ModPlayer clientPlayer)
@@ -19,7 +19,7 @@ namespace RedTeamMod
             }
 		}
 
-        public override void clientClone(ModPlayer clientClone)
+        public override void CopyClientState(ModPlayer clientClone)
         {
             clientClone.Player.team = Player.team;
         }
